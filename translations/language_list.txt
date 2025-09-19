@@ -57,7 +57,7 @@ Türkçe (Turkish) = Türkçe (Turkish)
 Tiếng Việt (Vietnamese) = Tiếng Việt (Vietnamese)
 
 # ui_data_bn.txt
-বেঙ্গলি (Bengali) = বেঙ্গলি (Bengali)
+বাংলা (Bangla) = বাংলা (Bangla)
 
 # ui_data_hu.txt
 Magyar (Hungarian) = Magyar (Hungarian)
