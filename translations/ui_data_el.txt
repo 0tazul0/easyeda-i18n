@@ -567,7 +567,7 @@ Resistor2_3D = Resistor2_3D
 Multimeter = Πολύμετρο
 Multimeter_3D = Multimeter_3D
 Oscilloscope = Oscilloscope
-sOscilloscope_3D = sOscilloscope_3D
+Oscilloscope_3D = Oscilloscope_3D
 Signal_Generator = Signal_Generator
 Signal Generator_3D = Signal Generator_3D
 Wattmeter = Wattmeter
@@ -654,6 +654,23 @@ Current_Controlled_Switch = Current_Controlled_Switch
 FUSE = FUSE
 Delay_Fuse = Delay_Fuse
 Transmission_Line = Transmission_Line
+Crystal =
+DFFEE =
+TFFEE =
+JKFFEE =
+SRFFEE =
+SRLATCHEE =
+SRNANDFFEE =
+SRNORFFEE =
+INVTSEE =
+INVODEE =
+Cbuffer =
+SPDT_Open =
+SPDT_Close =
+SPST_Close =
+SPST_Open =
+Fast_Crystal =
+Lamp =
 BCD_Segment = BCD_Segment
 Seven_Segment = Seven_Segment
 Traffic_Light = Traffic_Light
@@ -999,6 +1016,8 @@ Filter nets = Φιλτράρισμα Δικτύων
 Design Rule Checking = Έλεγχος Κανόνων Σχεδίασης
 Board Outline = Περίγραμμα Πλακέτας
 Plane Zone = Ζώνη Πλάνου
+Non-Plated =
+Non-Plated Pad =
 [drcRule]
 Width = Πλάτος
 DRC Width = Πλάτος DRC
@@ -1010,6 +1029,7 @@ Diameter = Διάμετρος
 DRC Diameter = Διάμετρος DRC
 Object = Αντικείμενο
 DRC Clearance = Απόσταση DRC
+Clearance =
 [/drcRule]
 #It will take a while to unroute this net, do you want to continue? = Θα χρειαστεί λίγος χρόνος για να αφαιρέσετε αυτό το δίκτυο, θέλετε να συνεχίσετε;
 More than one netlabel is found in wire, please checked whether this is correct, if you design it on purpose, please ignore this warning. = Βρέθηκαν περισσότερες από μία ετικέτες δικτύου στο καλώδιο, παρακαλώ ελέγξτε αν αυτό είναι σωστό, αν το σχεδιάσατε σκόπιμα, αγνοήστε αυτήν την προειδοποίηση.
@@ -1021,6 +1041,7 @@ The diameter is less than Design Rule Checking (DRC) diameter = Η διάμετ�
 The drill diameter is less than Design Rule Checking (DRC) drill diameter = Η διάμετρος του τρυπανιού είναι μικρότερη από τη διάμετρο του τρυπανιού DRC
 The track length is longer than Design Rule Checking (DRC) track length = Το μήκος της τροχιάς είναι μεγαλύτερο από το μήκος τροχιάς DRC
 The track width is less than Design Rule Checking (DRC) track width = Το πλάτος της τροχιάς είναι μικρότερο από το πλάτος τροχιάς DRC
+The pad is non-plated. Please check whether it is correct. =
 
 #Dialog Simulation
 Show your simulation report = Εμφάνιση αναφοράς προσομοίωσης
@@ -1664,7 +1685,7 @@ Please select its parent node = Παρακαλώ επιλέξτε τον γον�
 Libraries can not be exported as active project pdf. = Οι βιβλιοθήκες δεν μπορούν να εξαχθούν ως ενεργό αρχείο PDF έργου
 Error:No GND = Σφάλμα:Δίχως GND
 This circuit does not have GND. Please select GND from the circuit tool to add to the circuit. = Αυτό το κύκλωμα δεν έχει γείωση (GND). Παρακαλώ επιλέξτε τη γείωση από το εργαλείο κυκλώματος για να την προσθέσετε στο κύκλωμα.
-Current circuit doesn't have Voltage Resource or Current Resource symbol, please place it first at left side EElib or Spice Library. = Το τρέχον κύκλωμα δεν έχει σύμβολο για Πηγή Τάσης ή Πηγή Ρεύματος, παρακαλώ τοποθετήστε το πρώτα από την αριστερή πλευρά της βιβλιοθήκης EElib ή Spice.
+This circuit doesn't have a Voltage Source or Current Source symbol. Please place one from the EElib or Spice Library on the left side. = Το τρέχον κύκλωμα δεν έχει σύμβολο για Πηγή Τάσης ή Πηγή Ρεύματος, παρακαλώ τοποθετήστε το πρώτα από την αριστερή πλευρά της βιβλιοθήκης EElib ή Spice.
 Probe can not connect with ground(GND)! = Η ανιχνευτής δεν μπορεί να συνδεθεί με τη γείωση (GND)!
 Spice symbols's properties can't be empty. = Οι ιδιότητες των συμβόλων Spice δεν μπορούν να είναι κενές.
 Error:No Spice Symbol = Σφάλμα: Δεν υπάρχει σύμβολο Spice
@@ -1682,7 +1703,7 @@ Duplicate Component Prefix = Διπλότυπο Πρόθεμα Εξαρτημά�
 {0} exist = Υπάρχει το {0}
 Modify successfully, but {0} already exists = Τροποποιήθηκε επιτυχώς, αλλά το {0} ήδη υπάρχει
 There are some invalid packages, are you sure? = Υπάρχουν κάποια άκυρα πακέτα, είστε σίγουροι;
-Invalid Characters, library only allows [0-9a-zA-Z-] = Άκυροι χαρακτήρες, η βιβλιοθήκη επιτρέπει μόνο τους χαρακτήρες [0-9a-zA-Z-]
+Invalid Characters, library only allows [0-9a-zA-Z-_] = Άκυροι χαρακτήρες, η βιβλιοθήκη επιτρέπει μόνο τους χαρακτήρες [0-9a-zA-Z-_]
 Annotation success = Επιτυχής σχολιασμός
 If you accept this annotation operation, please save your files. If not, close your files without saving. = Εάν αποδεχτείτε αυτή τη λειτουργία σχολιασμού, παρακαλώ αποθηκεύστε τα αρχεία σας. Εάν όχι, κλείστε τα αρχεία σας χωρίς αποθήκευση.
 This file can't be saved under libs project. Please choose other project or create a new project = Αυτό το αρχείο δεν μπορεί να αποθηκευτεί στο έργο "libs". Παρακαλώ επιλέξτε άλλο έργο ή δημιουργήστε νέο έργο
@@ -1739,7 +1760,7 @@ Show, resize or hide the left sidebar to the left of the window here. = Εμφά
 Show or hide the right sidebar to the right of the window here. = Εμφάνιση ή απόκρυψη της δεξιάς πλαϊνής γραμμής στα δεξιά του παραθύρου εδώ.
 
 #Standard libs
-assive Components = Παθητικά Στοιχεία
+Passive Components = Παθητικά Στοιχεία
 Power Supply = Τροφοδοσία Ρεύματος
 Diodes = Δίοδοι
 Regulator = Ρυθμιστής
@@ -2324,10 +2345,10 @@ Design Rule's via diameter must be larger than via drill diameter = Η Διάμ�
 Clearance cannot be less than Design Rule Checking (DRC) setting value. = Η Απόσταση δεν μπορεί να είναι μικρότερη από την τιμή ρύθμισης του Ελέγχου Κανόνων Σχεδιασμού (DRC).
 Not a valid PCB, please check it again = Μη έγκυρη Πλακέτα, ελέγξτε την ξανά
 Previous connection must be closed = Η προηγούμενη σύνδεση πρέπει να κλείσει
-Network error. Please try again. = Σφάλμα Δικτύου. Παρακαλώ δοκιμάστε ξανά. 
-Router error. = Σφάλμα Δρομολογητή. 
-Invalid PCB. = Μη έγκυρη Πλακέτα. 
-General Clearance = Γενική Απόσταση 
+Network error. Please try again. = Σφάλμα Δικτύου. Παρακαλώ δοκιμάστε ξανά.
+Router error. = Σφάλμα Δρομολογητή.
+Invalid PCB. = Μη έγκυρη Πλακέτα.
+General Clearance = Γενική Απόσταση
 SMD Clearance = Απόσταση SMD
 
 #Ripup Nets
@@ -2707,12 +2728,13 @@ Length of Tracks = Μήκος Σιτηρών
 Copper Areas = Περιοχές Χαλκού
 
 #Differential Pair Routing
+Differential Pair Routing =
 Differential Pair Rule Setting = Ρυθμίσεις Κανόνων Διαφορικών Ζευγών
 Please input track width = Παρακαλώ εισάγετε το πλάτος της διαδρομής
 Please input clearance = Παρακαλώ εισάγετε την απόσταση
 Routing Rules = Κανόνες Δρομολόγησης
 
-For the Route Length Tuning section:
+#Route Length Tuning
 Track Length Tuning... = Ρύθμιση Μήκους Διαδρομής...
 Tracks with different net or non-track found in current targets. = Διαδρομές με διαφορετικό δίκτυο ή μη-διαδρομή βρέθηκαν στους τρέχοντες στόχους.
 Please select the signal tracks to be tuning. = Παρακαλώ επιλέξτε τις διαδρομές σήματος για ρύθμιση.
@@ -2728,7 +2750,7 @@ Adjust Type = Τύπος Ρύθμισης
 Double Side = Διπλή Όψη
 Single Side = Μονή Όψη
 
-Can not connect to the server = Αδυναμία σύνδεσης με τον διακομιστή
+Cannot connect to the server = Αδυναμία σύνδεσης με τον διακομιστή
 
 #Dialog Copper Area Manager
 Copper Area Manager... = Διαχείριση Περιοχής Χαλκού...
@@ -2904,7 +2926,11 @@ No, Keep It = Όχι, Διατήρησέ το
 
 Download Client = Κατέβασμα Πελάτη
 
-Search tutorial、open source projects etc. = Αναζήτηση οδηγού, έργων ανοιχτού κώδικα κ.λπ.
+Search tutorial, open source projects etc. = Αναζήτηση οδηγού, έργων ανοιχτού κώδικα κ.λπ.
+[search]
+Tutorials =
+OSHWLAB =
+[/search]
 
 Go to LCSC and search for = Πήγαινε στο LCSC και αναζήτησε για
 Go to LCSC = Πήγαινε στο LCSC
@@ -3188,8 +3214,6 @@ This footprint is LED, CASE or DIO type, please check if need to draw the polari
 This footprint is DIP type, please check if haven't place multi-layer pads. = Αυτό το footprint είναι τύπου DIP, παρακαλώ ελέγξτε αν δεν έχετε τοποθετήσει πατ πολλών στρωμάτων.
 This footprint is SMD type, please check if haven't placed single-layer pads. = Αυτό το footprint είναι τύπου SMD, παρακαλώ ελέγξτε αν δεν έχετε τοποθετήσει πατ μονών στρωμάτων.
 
-Here's the updated translation with the requested formatting:
-
 ROUND = ΣΤΡΟΓΓΥΛΟ
 RECTANGLE = ΟΡΘΟΓΩΝΙΟ
 OCTAGONAL = ΟΚΤΑΓΩΝΙΚΟ
@@ -3301,8 +3325,8 @@ Select the objects that cannot be generated = Επιλέξτε τα αντικε
 
 Please compress schematic and PCB as a zip file and then import it, if you only import the schematic you need to binding with the footprint manually. = Παρακαλώ συμπιέστε το σχέδιο και το PCB σε αρχείο zip και μετά εισάγετε το, αν εισάγετε μόνο το σχέδιο, πρέπει να το συνδέσετε με το footprint χειροκίνητα.
 Please compress schematic and PCB in ASCII format as a zip file and then import it, if you only import the schematic you need to binding with the footprint manually. = Παρακαλώ συμπιέστε το σχέδιο και το PCB σε μορφή ASCII σε αρχείο zip και μετά εισάγετε το, αν εισάγετε μόνο το σχέδιο, πρέπει να το συνδέσετε με το footprint χειροκίνητα.
-Import failed! The imported files were not ASCII format, please save the files as "Advanced Schematic ascii(.SchDoc)" or"PCB ASCII File(.PcbDoc)" at Altium Designer first, and then import. = Αποτυχία εισαγωγής! Τα αρχεία που εισήχθησαν δεν ήταν σε μορφή ASCII, παρακαλώ αποθηκεύστε τα αρχεία ως "Advanced Schematic ascii(.SchDoc)" ή "PCB ASCII File(.PcbDoc)" στο Altium Designer πρώτα και μετά εισάγετε τα.
-Please save the files as "Advanced Schematic ascii(.SchDoc)" or"PCB ASCII File(.PcbDoc)" at Altium Designer first, and then import. = Παρακαλώ αποθηκεύστε τα αρχεία ως "Advanced Schematic ascii(.SchDoc)" ή "PCB ASCII File(.PcbDoc)" στο Altium Designer πρώτα και μετά εισάγετε τα.
+Import failed! The imported files were not ASCII format, please save the files as "Advanced Schematic ascii(*.SchDoc)" or"PCB ASCII File(*.PcbDoc)" at Altium Designer first, and then import. = Αποτυχία εισαγωγής! Τα αρχεία που εισήχθησαν δεν ήταν σε μορφή ASCII, παρακαλώ αποθηκεύστε τα αρχεία ως "Advanced Schematic ascii(*.SchDoc)" ή "PCB ASCII File(*.PcbDoc)" στο Altium Designer πρώτα και μετά εισάγετε τα.
+Please save the files as "Advanced Schematic ascii(*.SchDoc)" or"PCB ASCII File(*.PcbDoc)" at Altium Designer first, and then import. = Παρακαλώ αποθηκεύστε τα αρχεία ως "Advanced Schematic ascii(*.SchDoc)" ή "PCB ASCII File(*.PcbDoc)" στο Altium Designer πρώτα και μετά εισάγετε τα.
 The PCB text will use the editor new font family, the text maybe will appear a little excursion. = Το κείμενο του PCB θα χρησιμοποιεί τη νέα οικογένεια γραμματοσειρών του επεξεργαστή, το κείμενο ενδέχεται να εμφανίζεται με λίγο αποκλίνοντα τρόπο.
 Because of different file format and element design, the imported element may have some differences, please check carefully. The more information please refer the tutorials. = Λόγω διαφορετικής μορφής αρχείου και σχεδίασης στοιχείων, το εισαγόμενο στοιχείο ενδέχεται να έχει κάποιες διαφορές, παρακαλώ ελέγξτε προσεκτικά. Για περισσότερες πληροφορίες ανατρέξτε στα μαθήματα.
 EasyEDA is not responsible for any losses caused by format conversion differences, if you do not agree, please do not import. = Η EasyEDA δεν ευθύνεται για οποιεσδήποτε απώλειες που προκαλούνται από διαφορές στη μετατροπή μορφών, αν δεν συμφωνείτε, παρακαλώ μην εισάγετε.
@@ -3315,7 +3339,7 @@ Tips = Συμβουλές
 Exists incomplete connection = Υπάρχει ατελής σύνδεση
 Found that the board has incomplete connection, please check the nets and ratlines = Βρέθηκε ότι η πλακέτα έχει ατελή σύνδεση, παρακαλώ ελέγξτε τα δίκτυα και τις γραμμές αναγνώρισης
 
-Please save the files as "Advanced Schematic ascii(.SchDoc)" or"PCB ASCII File(.PcbDoc)" at Altium Designer first, and then import. = Παρακαλώ αποθηκεύστε τα αρχεία ως "Advanced Schematic ascii(.SchDoc)" ή "PCB ASCII File(.PcbDoc)" στο Altium Designer πρώτα και μετά εισάγετε τα.
+Please save the files as "Advanced Schematic ascii(*.SchDoc)" or"PCB ASCII File(*.PcbDoc)" at Altium Designer first, and then import. = Παρακαλώ αποθηκεύστε τα αρχεία ως "Advanced Schematic ascii(*.SchDoc)" ή "PCB ASCII File(*.PcbDoc)" στο Altium Designer πρώτα και μετά εισάγετε τα.
 Tips = Συμβουλές
 Exists incomplete connection = Υπάρχει ατελής σύνδεση
 Found that the board has incomplete connection, please check the nets and ratlines = Βρέθηκε ότι η πλακέτα έχει ατελή σύνδεση, παρακαλώ ελέγξτε τα δίκτυα και τις γραμμές αναγνώρισης
@@ -3381,3 +3405,22 @@ Incomplete Connection = Ατελής Σύνδεση
 Found some objects are far away from board outline, whether if move them at board bottom right corner to good to adjust? = Βρέθηκαν κάποια αντικείμενα μακριά από το περίγραμμα της πλακέτας, αν τα μετακινήσετε στη γωνία κάτω δεξιά της πλακέτας για καλή προσαρμογή;
 
 Auto Pin Placement = Αυτόματη Τοποθέτηση Ακίδων
+About the Library Files Note =
+
+# upgrade notice
+New project notice =
+EasyEDA Pro has been released for several years and can completely replace the EasyEDA Std. =
+1. The features are more comprehensive and powerful. =
+2. Better performance and no pressure on large designs. =
+3. The feature is constantly updated, making drawing more efficient. =
+4. Support the batch migration of EasyEDA Std libraries and projects. =
+5. Support on premise hosting for enterprise. =
+It is recommended to gradually transfer to the EasyEDA Pro for project creation starting from now.  =
+The EasyEDA Std will no longer add new features, and enter maintenance phase. =
+Features comparison =
+Projects migration tutorials. =
+Apply trial for free =
+Migration Assistance Group =
+Don't show this notice again today. =
+New Pro Project =
+New Std Project =

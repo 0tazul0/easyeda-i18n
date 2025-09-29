@@ -1017,6 +1017,8 @@ Filter nets = নেট ফিল্টার
 Design Rule Checking = ডিজাইন নিয়ম পরীক্ষা
 Board Outline = বোর্ড আউটলাইন
 Plane Zone = প্লেন জোন
+Non-Plated =
+Non-Plated Pad =
 [drcRule]
 Width = প্রস্থ
 DRC Width = DRC প্রস্থ
@@ -1028,6 +1030,7 @@ Diameter = ব্যাস
 DRC Diameter = DRC ব্যাস
 Object = অবজেক্ট
 DRC Clearance = DRC ক্লিয়ারেন্স
+Clearance =
 [/drcRule]
 #It will take a while to unroute this net, do you want to continue? = এই নেট আনরুট করতে কিছুটা সময় লাগবে, আপনি কি চালিয়ে যেতে চান?
 More than one netlabel is found in wire, please checked whether this is correct, if you design it on purpose, please ignore this warning. = তারে একাধিক নেটলেবেল পাওয়া গেছে, দয়া করে পরীক্ষা করুন এটি সঠিক কিনা, যদি আপনি ইচ্ছাকৃতভাবে এটি ডিজাইন করেন তাহলে এই সতর্কতা উপেক্ষা করুন।
@@ -1039,6 +1042,7 @@ The diameter is less than Design Rule Checking (DRC) diameter = ব্যাস 
 The drill diameter is less than Design Rule Checking (DRC) drill diameter = ড্রিল ব্যাস ডিজাইন রুল চেকিং (DRC) ড্রিল ব্যাসের চেয়ে কম
 The track length is longer than Design Rule Checking (DRC) track length = ট্র্যাক দৈর্ঘ্য ডিজাইন রুল চেকিং (DRC) ট্র্যাক দৈর্ঘ্যের চেয়ে দীর্ঘ
 The track width is less than Design Rule Checking (DRC) track width = ট্র্যাক প্রস্থ ডিজাইন রুল চেকিং (DRC) ট্র্যাক প্রস্থের চেয়ে কম
+The pad is non-plated. Please check whether it is correct. =
 
 #Dialog Simulation
 Show your simulation report = আপনার সিমুলেশন রিপোর্ট দেখান
@@ -1682,7 +1686,7 @@ Please select its parent node = দয়া করে এর প্যারে
 Libraries can not be exported as active project pdf. = লাইব্রেরি সক্রিয় প্রকল্প pdf হিসাবে এক্সপোর্ট করা যাবে না।
 Error:No GND = ত্রুটি:কোনো GND নেই
 This circuit does not have GND. Please select GND from the circuit tool to add to the circuit. = এই সার্কিটে GND নেই। সার্কিটে যোগ করতে দয়া করে সার্কিট টুল থেকে GND নির্বাচন করুন।
-Current circuit doesn't has Voltage Resource or Current Resource symbol, please place it first at left side EElib or Spice Library. = বর্তমান সার্কিটে ভোল্টেজ রিসোর্স বা কারেন্ট রিসোর্স প্রতীক নেই, দয়া করে এটি প্রথমে বাম পাশের EElib বা Spice লাইব্রেরিতে রাখুন।
+This circuit doesn't have a Voltage Source or Current Source symbol. Please place one from the EElib or Spice Library on the left side. = বর্তমান সার্কিটে ভোল্টেজ রিসোর্স বা কারেন্ট রিসোর্স প্রতীক নেই, দয়া করে এটি প্রথমে বাম পাশের EElib বা Spice লাইব্রেরিতে রাখুন।
 Probe can not connect with ground(GND)! = প্রোব গ্রাউন্ড(GND) এর সাথে সংযোগ করতে পারে না!
 Spice symbols's properties can't be empty. = স্পাইস প্রতীকের বৈশিষ্ট্য খালি থাকতে পারে না।
 Error:No Spice Symbol = ত্রুটি:কোনো স্পাইস প্রতীক নেই
@@ -1729,7 +1733,7 @@ Please create a board outline! Click the help button to find out how to create a
 Can not fetch files from server, please check your network and try again = সার্ভার থেকে ফাইল আনতে পারে না, দয়া করে আপনার নেটওয়ার্ক পরীক্ষা করুন এবং আবার চেষ্টা করুন
 Please open a schematic first! = দয়া করে প্রথমে একটি স্কিম্যাটিক খুলুন!
 Can not find the schematic of this PCB = এই PCB এর স্কিম্যাটিক খুঁজে পাওয়া যাচ্ছে না
-invalid points! = অবৈধ পয়েন্ট!
+Invalid points! = অবৈধ পয়েন্ট!
 This file does not support this operation. = এই ফাইল এই অপারেশন সমর্থন করে না।
 Net Name Conflict = নেট নাম দ্বন্দ্ব
 Net name = নেট নাম
@@ -1844,8 +1848,8 @@ SCR = SCR
 Triac = ট্রায়াক
 Transform(US) = ট্রান্সফর্ম (US)
 Transform(EU) = ট্রান্সফর্ম (EU)
-Transfrom(NEUTRAL-CTR TAP)(US) = ট্রান্সফর্ম (নিউট্রাল-সেন্টার ট্যাপ) (US)
-Transfrom(NEUTRAL-CTR TAP)(EU) = ট্রান্সফর্ম (নিউট্রাল-সেন্টার ট্যাপ) (EU)
+Transform(NEUTRAL-CTR TAP)(US) = ট্রান্সফর্ম (নিউট্রাল-সেন্টার ট্যাপ) (US)
+Transform(NEUTRAL-CTR TAP)(EU) = ট্রান্সফর্ম (নিউট্রাল-সেন্টার ট্যাপ) (EU)
 Mutual Inductors = মিউচুয়াল ইন্ডাক্টর
 Mutual Inductors2 = মিউচুয়াল ইন্ডাক্টর২
 Or Gate = অর গেট
@@ -1869,7 +1873,7 @@ Fuse = ফিউজ
 Speaker = স্পিকার
 XTAL = XTAL
 5pin Operational Amplifier = ৫পিন অপারেশনাল এম্প্লিফায়ার
-3pin Operational amplifier = ৩পিন অপারেশনাল এম্প্লিফায়ার
+3pin Operational Amplifier = ৩পিন অপারেশনাল এম্প্লিফায়ার
 Transmission Line = ট্রান্সমিশন লাইন
 Voltmeter = ভোল্টমিটার
 Ammeter = অ্যামিটার
@@ -2042,7 +2046,7 @@ Download = ডাউনলোড করুন
 Start = শুরু করুন
 You have unsaved files, are you sure you want to log out without saving the files? = আপনার কিছু অসংরক্ষিত ফাইল আছে, আপনি কি নিশ্চিত যে আপনি ফাইলগুলি সংরক্ষণ না করে লগ আউট করতে চান?
 Please use the web version to run this function. = এই ফাংশন চালাতে অনুগ্রহ করে ওয়েব সংস্করণ ব্যবহার করুন।
-Please save this file to you project! = অনুগ্রহ করে এই ফাইলটি আপনার প্রকল্পে সংরক্ষণ করুন!
+Please save this file to your project! = অনুগ্রহ করে এই ফাইলটি আপনার প্রকল্পে সংরক্ষণ করুন!
 Nothing changed = কিছুই পরিবর্তিত হয়নি
 Delete Node = নোড মুছুন
 This layer is invisible. = এই লেয়ারটি অদৃশ্য।
@@ -2734,19 +2738,19 @@ Routing Rules = রাউটিং রুল
 Track Length Tuning... = ট্র্যাক দৈর্ঘ্য টিউনিং...
 Tracks with different net or non-track found in current targets. = বর্তমান টার্গেটে ভিন্ন নেট বা নন-ট্র্যাক পাওয়া গেছে।
 Please select the signal tracks to be tuning. = অনুগ্রহ করে টিউনিং করার জন্য সিগন্যাল ট্র্যাক নির্বাচন করুন।
-The total length exceeds the Design Rule Checking (DRC) constraint, continue ? = মোট দৈর্ঘ্য ডিজাইন রুল চেকিং (DRC) সীমাবদ্ধতা অতিক্রম করেছে, চালিয়ে যাবেন?
+The total length exceeds the Design Rule Checking (DRC) constraint, continue? = মোট দৈর্ঘ্য ডিজাইন রুল চেকিং (DRC) সীমাবদ্ধতা অতিক্রম করেছে, চালিয়ে যাবেন?
 45° Angle = ৪৫° কোণ
 90° Angle = ৯০° কোণ
-DRC Track Length : = DRC ট্র্যাক দৈর্ঘ্য :
-Current Length : = বর্তমান দৈর্ঘ্য :
-Additional Length : = অতিরিক্ত দৈর্ঘ্য :
+DRC Track Length: = DRC ট্র্যাক দৈর্ঘ্য :
+Current Length: = বর্তমান দৈর্ঘ্য :
+Additional Length: = অতিরিক্ত দৈর্ঘ্য :
 Target Length: = টার্গেট দৈর্ঘ্য:
 Current Length: = বর্তমান দৈর্ঘ্য:
 Adjust Type = অ্যাডজাস্ট টাইপ
 Double Side = ডাবল সাইড
 Single Side = সিঙ্গেল সাইড
 
-can not connect to the server = সার্ভারের সাথে সংযোগ করতে পারে না
+Cannot connect to the server = সার্ভারের সাথে সংযোগ করতে পারে না
 
 #Dialog Copper Area Manager
 Copper Area Manager... = কপার এরিয়া ম্যানেজার...
@@ -2921,7 +2925,11 @@ No, Keep It = না, রাখুন
 
 Download Client = ক্লায়েন্ট ডাউনলোড
 
-Search tutorial、open source projects etc. = টিউটোরিয়াল, ওপেন সোর্স প্রকল্প ইত্যাদি অনুসন্ধান করুন
+Search tutorial, open source projects etc. = টিউটোরিয়াল, ওপেন সোর্স প্রকল্প ইত্যাদি অনুসন্ধান করুন
+[search]
+Tutorials =
+OSHWLAB =
+[/search]
 
 Go to LCSC and search for = LCSC-তে যান এবং অনুসন্ধান করুন
 Go to LCSC = LCSC-তে যান
@@ -3395,3 +3403,22 @@ Incomplete Connection = অসম্পূর্ণ সংযোগ
 Found some objects are far away from board outline, whether if move them at board bottom right corner to good to adjust? = বোর্ড আউটলাইন থেকে দূরে কিছু অবজেক্ট পাওয়া গেছে। ভালভাবে সামঞ্জস্য করতে এগুলোকে বোর্ডের নিচের ডান কোণে সরিয়ে নেবেন?
 
 Auto Pin Placement = অটো পিন প্লেসমেন্ট
+About the Library Files Note =
+
+# upgrade notice
+New project notice =
+EasyEDA Pro has been released for several years and can completely replace the EasyEDA Std. =
+1. The features are more comprehensive and powerful. =
+2. Better performance and no pressure on large designs. =
+3. The feature is constantly updated, making drawing more efficient. =
+4. Support the batch migration of EasyEDA Std libraries and projects. =
+5. Support on premise hosting for enterprise. =
+It is recommended to gradually transfer to the EasyEDA Pro for project creation starting from now.  =
+The EasyEDA Std will no longer add new features, and enter maintenance phase. =
+Features comparison =
+Projects migration tutorials. =
+Apply trial for free =
+Migration Assistance Group =
+Don't show this notice again today. =
+New Pro Project =
+New Std Project =
